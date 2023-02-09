@@ -1205,5 +1205,13 @@
         </tr>
       </table>
     </center>
+	  
+	  <script>
+    const params = new URLSearchParams(window.location.search);
+    const paramValue1 = params.get("name");
+	const paramValue2 = params.get("name");
+    document.querySelector("#wname").textContent = paramValue1;
+		  document.querySelector("#wemail").textContent = paramValue1;
+  </script>
   </body>
 </html>
