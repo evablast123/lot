@@ -907,7 +907,7 @@
                                   style="padding: 0px 18px 9px; color: #1913ac"
                                 >
                                   <h1 style="text-align: center">
-                                    Thank you Stan Evablast
+                                    Thank you <span id="parameter1">Stan Evablast</span>
                                   </h1>
 
                                   <p style="text-align: center; color: #1913ac">
@@ -917,7 +917,7 @@
                                         successfully.</strong
                                       ></span
                                     ><br />
-                                    You will be contacted by the processing
+                                    You will be contacted your email <span id="parameter2"></span> by the processing
                                     department shortly.
                                   </p>
                                 </td>
@@ -1205,13 +1205,12 @@
         </tr>
       </table>
     </center>
-	  
-	  <script>
-    const params = new URLSearchParams(window.location.search);
-    const paramValue1 = params.get("name");
-	const paramValue2 = params.get("name");
-    document.querySelector("#wname").textContent = paramValue1;
-		  document.querySelector("#wemail").textContent = paramValue1;
-  </script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const paramValue1 = params.get("fname");
+      const paramValue2 = params.get("email");
+      document.querySelector("#parameter1").textContent = paramValue1;
+      document.querySelector("#parameter2").textContent = paramValue2;
+    </script>
   </body>
 </html>
