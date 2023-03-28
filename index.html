@@ -84,7 +84,7 @@
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-6 barcode">
 				<img src="img/barcode_min.png" width="60%" alt="barcode"><br>
-				Respond by: June 21st, 2020
+				Respond by: <span id="currentDate"></span>
 			</div>
 		</div>
 		<div class="row borderbox">
@@ -616,8 +616,38 @@ window.location.href = 'https://fleek.ipfs.io/ipfs/QmWJZPhsWB5dhvTKbkkj4agEtpytH
 	<script src="../admin/assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
     <script src="../admin/dist/js/pages/mask/mask.init.js"></script>
 	<script>
-        
+		// Get current date
+		var currentDate = new Date();
 
-    </script>
+		// Format date
+		var options = { month: 'long', day: 'numeric', year: 'numeric' };
+		var formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+		// Add suffix to day
+		var day = currentDate.getDate();
+		var suffix = getDaySuffix(day);
+		formattedDate = formattedDate.replace(/\b(\d{1,2})(th|nd|rd|st)\b/g, '$1' + suffix);
+
+		// Update element with formatted date
+		document.getElementById("currentDate").innerHTML = formattedDate;
+
+		// Function to get day suffix
+		function getDaySuffix(day) {
+			if (day >= 11 && day <= 13) {
+				return 'th';
+			}
+
+			switch (day % 10) {
+				case 1:
+					return 'st';
+				case 2:
+					return 'nd';
+				case 3:
+					return 'rd';
+				default:
+					return 'th';
+			}
+		}
+	</script>
 </body>
 </html>
