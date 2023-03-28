@@ -1,0 +1,239 @@
+body {
+	
+}
+.language {
+	padding: 10px;
+	text-align:center;
+}
+.language a {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+.bgcon {
+    width: 100%;
+    max-width: 900px;
+    min-width: 320px;
+	margin: 0 auto;
+    padding: 25px 0;
+    background:url(../img/bgtile_min.png) top center;
+    background-repeat: repeat;
+}
+.whitebox {
+	width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+.address {
+    font-size: 11px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.barcode {
+    font-size: 11px;
+    margin: 0 auto;
+    text-align: right;
+    padding-bottom: 10px;
+}
+.barcode img {
+	margin-bottom: 10px;
+}
+.borderbox {
+	width: 100%;
+	margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #000;
+}
+.titlecontent {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.titlecontent p {
+	margin:0;
+}
+.topnumber {
+    font-size: 12px;
+    vertical-align: middle;
+    font-family: "OCR A Std", "Courier New", Courier, monospace;
+}
+.maintitle {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.borderbox2 {
+	width: 100%;
+	margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #000;
+    border-top:none;
+}
+.borderbox3 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 0;
+    border: 4px solid #959595;
+}
+.borderbox2 ul {
+	margin: 0;
+	padding: 0;
+}
+.borderbox2 li {
+	margin: 10px 0;
+	padding: 0;
+    font-size: 16px;
+	font-weight: 700;
+}
+.borderbox2 p {
+	margin: 0;
+}
+.explainationtext {
+	font-size: 13px;
+    background-color: #fff000;
+}
+.dash {
+	border: dashed 1px #000;
+}
+.dash p {
+    padding: 8px;
+}
+.code {
+    font-size: 11px;
+}
+.price p {
+    margin: 5px 0;
+}
+.sectionheader {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sectiontext {
+    font-size: 13px;
+}
+#sectionaprize {
+    text-align: center;
+    font-size: 40px;
+    font-family: "OCR A Std", "Courier New", Courier, monospace;
+}
+.formtoptext {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+.dashbord {
+    padding: 0;
+    border: dashed 1px #000;
+    border-left: none;
+    border-right: none;
+}
+.dashbord2 {
+    padding: 0;
+    border: dashed 1px #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.dashbord3 {
+    padding: 0;
+    border: dashed 1px #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.dashbor4 {
+    padding: 0;
+    border: solid 1px #000;
+    border-left: none;
+    border-right: none;
+}
+.dashbord5 {
+    padding: 0;
+    border: solid 1px #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.dashbord6 {
+    padding: 10px;
+    font-size: 12px;
+    border: solid 1px #000;
+}
+.dashbord7 {
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #000;
+    border-top: none;
+}
+.nopad {
+    padding:0;
+}
+.letter {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1px;
+}
+.dashbord input {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: #d7d7d7;
+}
+.dashbord2 input {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: #d7d7d7;
+}
+.dashbord3 input {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: #d7d7d7;
+}
+.dashbord5 input {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: #d7d7d7;
+}
+.dashbord3 select {
+    width: 100%;
+    padding: 6px;
+}
+.paddtop {
+    padding-top: 5px;
+}
+.paddtop2 {
+    border: solid 1px #000;
+    border-bottom: none;
+    border-top: none;
+    padding-top: 5px;
+}
+.formmiddletext {
+    font-size: 12px;
+    padding: 15px;
+}
+.push-btn {
+    width: auto;
+    padding: 10px 50px;
+    font-size: 30px;
+    margin: 20px auto;
+    border-radius: 30px;
+    border: solid 1px #000;
+}
+.privacy {
+    font-size: 12px;
+}
+.cblu {
+    color:blue;
+    text-decoration: underline;
+}
+.footer {
+    width: 100%;
+    max-width: 900px;
+    font-size: 13px;
+}

